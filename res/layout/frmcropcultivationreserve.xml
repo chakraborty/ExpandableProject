@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        isScrollContainer="true" >
+
+        <LinearLayout
+            android:id="@+id/linearLayoutmain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="0px"
+                android:focusable="true"
+                android:focusableInTouchMode="true" />
+
+            <TextView
+                android:id="@+id/qqq"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:gravity="center"
+                android:text="akdals"
+                android:textAppearance="?android:attr/textAppearanceLarge" >
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/checkBoxHolder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout111"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/lblcol1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Latrine #"
+                            android:textStyle="bold" >
+                        </TextView>
+
+                        <Spinner
+                            android:id="@+id/spcol1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/lblcol2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Type of toilet facility"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/txtcol2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+
+                        <EditText
+                            android:id="@+id/txtcol2other"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dip"
+                        android:layout_marginTop="5dip"
+                        android:background="@drawable/border"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/lblcol3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Functionality status of  toilet"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/txtcol3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/border"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lblcol4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Does any member of your household use this latrine on a regular basis (defined as more than 3 days per week)?"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <Spinner
+                        android:id="@+id/txtcol4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/border"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lblcol5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ownership of the toilet facility"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <Spinner
+                        android:id="@+id/txtcol5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/border"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lblcol6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Users of the toilet facility"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <Spinner
+                        android:id="@+id/txtcol6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/border"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lblcol7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="If shared, how many households sharing the toilet facility? Insert the # of Shared household"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <Spinner
+                        android:id="@+id/txtcol7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/border"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lblcol8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="In what month and year was the latrine originally constructed?"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <CheckBox
+                        android:id="@+id/chkcol8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dont know"
+                        android:textStyle="bold" >
+                    </CheckBox>
+
+                    <EditText
+                        android:id="@+id/txtcol8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:text=""
+                        android:textStyle="bold" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/border"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lblcol9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Users of the toilet facility"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <Spinner
+                        android:id="@+id/txtcol9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/border"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lblcol10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Users of the toilet facility"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <Spinner
+                        android:id="@+id/txtcol10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/border"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lblcol11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Users of the toilet facility"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <Spinner
+                        android:id="@+id/txtcol11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/border"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lblcol12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Users of the toilet facility"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <Spinner
+                        android:id="@+id/txtcol12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:id="@+id/txtcol12other"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/border"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lblcol13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Users of the toilet facility"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <Spinner
+                        android:id="@+id/txtcol13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/border"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lblcol14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="In what month and year was the latrine originally constructed?"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <CheckBox
+                        android:id="@+id/chkcol14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dont know"
+                        android:textStyle="bold" >
+                    </CheckBox>
+
+                    <EditText
+                        android:id="@+id/txtcol14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:text=""
+                        android:textStyle="bold" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/border"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lblcol15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Users of the toilet facility"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <Spinner
+                        android:id="@+id/txtcol15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/border"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lblcol16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Users of the toilet facility"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <Spinner
+                        android:id="@+id/txtcol16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/border"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lblcol17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Users of the toilet facility"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <Spinner
+                        android:id="@+id/txtcol17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/border"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lblcol18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Users of the toilet facility"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <Spinner
+                        android:id="@+id/txtcol18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:id="@+id/txtcol18other"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="text" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="10dip"
+        android:layout_weight="0.03"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/btnNote"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.96"
+            android:text="Add Note" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="6" >
+
+        <Button
+            android:id="@+id/prevButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip"
+            android:layout_weight="2"
+            android:text="Previous" >
+        </Button>
+
+        <Button
+            android:id="@+id/clButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Clear" >
+        </Button>
+
+        <Button
+            android:id="@+id/saveNxtButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="2"
+            android:text="Save &amp; Next" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>
